@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 14 13:54:47 2023
+# Process ID: 17076
+# Current directory: D:/Assignment/Codes/Digital Design/serial_adder/serial_adder.runs/synth_1
+# Command line: vivado.exe -log serial_adde.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source serial_adde.tcl
+# Log file: D:/Assignment/Codes/Digital Design/serial_adder/serial_adder.runs/synth_1/serial_adde.vds
+# Journal file: D:/Assignment/Codes/Digital Design/serial_adder/serial_adder.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source serial_adde.tcl -notrace
+Command: synth_design -top serial_adde -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8956 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 432.004 ; gain = 99.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'serial_adde' [D:/Assignment/Codes/Digital Design/serial_adder/serial_adder.srcs/sources_1/new/serial_adde.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [D:/Assignment/Codes/Digital Design/serial_adder/serial_adder.srcs/sources_1/new/clock_divider.v:23]
+	Parameter DIVISOR bound to: 28'b0111011100110101100101000000 
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (1#1) [D:/Assignment/Codes/Digital Design/serial_adder/serial_adder.srcs/sources_1/new/clock_divider.v:23]
+ERROR: [Synth 8-439] module 'full_adder' not found [D:/Assignment/Codes/Digital Design/serial_adder/serial_adder.srcs/sources_1/new/serial_adde.v:33]
+ERROR: [Synth 8-6156] failed synthesizing module 'serial_adde' [D:/Assignment/Codes/Digital Design/serial_adder/serial_adder.srcs/sources_1/new/serial_adde.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 488.160 ; gain = 155.230
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+5 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 14 13:54:54 2023...

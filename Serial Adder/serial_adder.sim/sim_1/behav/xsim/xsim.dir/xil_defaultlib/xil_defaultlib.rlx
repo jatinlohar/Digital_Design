@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+F:/Full_adder/Full_adder.srcs/sources_1/new/full_adder.v,1673858754,verilog,,F:/serial_adder/serial_adder.srcs/sources_1/new/serial_adde.v,,full_adder,,,,,,,,
+F:/serial_adder/serial_adder.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+F:/serial_adder/serial_adder.srcs/sources_1/new/clock_divider.v,1678540176,verilog,,F:/Full_adder/Full_adder.srcs/sources_1/new/full_adder.v,,ClockDivider,,,,,,,,
+F:/serial_adder/serial_adder.srcs/sources_1/new/serial_adde.v,1678546287,verilog,,,,serial_adde;sim,,,,,,,,

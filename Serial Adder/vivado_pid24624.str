@@ -1,0 +1,323 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 24624
+License: Customer
+
+Current time: 	Mon Mar 13 13:12:37 IST 2023
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 37 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	F:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Dell
+User home directory: C:/Users/Dell
+User working directory: F:/serial_adder
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: F:/Xilinx/Vivado
+HDI_APPROOT: F:/Xilinx/Vivado/2018.3
+RDI_DATADIR: F:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: F:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Dell/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Dell/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Dell/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	F:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/serial_adder/vivado.log
+Vivado journal file location: 	F:/serial_adder/vivado.jou
+Engine tmp dir: 	F:/serial_adder/.Xil/Vivado-24624-DESKTOP-DKR4IP8
+
+Xilinx Environment Variables
+----------------------------
+XILINX: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: F:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: F:/Xilinx/Vivado/2018.3
+XILINX_SDK: F:/Xilinx/SDK/2018.3
+XILINX_VIVADO: F:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: F:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 621 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 99 MB (+101499kb) [00:00:08]
+// [Engine Memory]: 551 MB (+426248kb) [00:00:08]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: F:\serial_adder\serial_adder.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/serial_adder/serial_adder.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/serial_adder/serial_adder.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 46 MB. Current time: 3/13/23, 1:12:40 PM IST
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 724 MB (+152442kb) [00:00:16]
+// [GUI Memory]: 106 MB (+1476kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  3629 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 775.105 ; gain = 157.441 
+// Project name: serial_adder; location: F:/serial_adder; part: xc7z020clg400-1
+// [Engine Memory]: 789 MB (+30386kb) [00:00:20]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (serial_adde.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, serial_adde (serial_adde.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, serial_adde (serial_adde.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// C (cp): Create Constraints File: addNotify
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "addon", true); // Y (D, C)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+dismissDialog("Create Constraints File"); // C (cp)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 15 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open F:/serial_adder/serial_adder.srcs/constrs_1/new/addon.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 F:/serial_adder/serial_adder.srcs/constrs_1/new/addon.xdc 
+// [GUI Memory]: 116 MB (+5851kb) [00:00:50]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, addon.xdc]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, addon.xdc]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("addon.xdc", 187, 104); // cl (w, cp)
+typeControlKey((HResource) null, "addon.xdc", 'v'); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, co.xdc]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, co.xdc]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("co.xdc", 707, 268); // cl (w, cp)
+selectCodeEditor("co.xdc", 711, 293); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("co.xdc", 988, 225); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("co.xdc", 999, 252); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 159 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "addon.xdc", 2); // k (j, cp)
+selectCodeEditor("addon.xdc", 388, 130); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "co.xdc", 3); // k (j, cp)
+// Elapsed time: 55 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, addon.xdc]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, addon.xdc]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 150 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_adde.v", 1); // k (j, cp)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, co.xdc]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, co.xdc]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "addon.xdc", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_adde.v", 1); // k (j, cp)
+// Elapsed time: 235 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, co.xdc]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, co.xdc]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("co.xdc", 709, 208); // cl (w, cp)
+selectCodeEditor("co.xdc", 711, 229); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("co.xdc", 994, 315); // cl (w, cp)
+selectCodeEditor("co.xdc", 959, 184); // cl (w, cp)
+selectCodeEditor("co.xdc", 677, 125); // cl (w, cp)
+selectCodeEditor("co.xdc", 672, 135); // cl (w, cp)
+selectCodeEditor("co.xdc", 677, 158); // cl (w, cp)
+selectCodeEditor("co.xdc", 675, 179); // cl (w, cp)
+selectCodeEditor("co.xdc", 675, 179, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, addon.xdc]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, addon.xdc]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("addon.xdc", 8, 140); // cl (w, cp)
+selectCodeEditor("addon.xdc", 9, 158); // cl (w, cp)
+selectCodeEditor("addon.xdc", 690, 137); // cl (w, cp)
+selectCodeEditor("addon.xdc", 691, 150); // cl (w, cp)
+selectCodeEditor("addon.xdc", 887, 87); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_adde.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "addon.xdc", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "co.xdc", 3); // k (j, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("co.xdc", 10, 112); // cl (w, cp)
+selectCodeEditor("co.xdc", 717, 115); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "addon.xdc", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_adde.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "co.xdc", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_adde.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "co.xdc", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_adde.v", 1); // k (j, cp)
+// [GUI Memory]: 124 MB (+2227kb) [00:15:13]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "addon.xdc", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "co.xdc", 3); // k (j, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "addon.xdc", 2); // k (j, cp)
+// Elapsed time: 33 seconds
+selectCodeEditor("addon.xdc", 829, 226); // cl (w, cp)
+selectCodeEditor("addon.xdc", 700, 159); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("addon.xdc", 677, 160); // cl (w, cp)
+selectCodeEditor("addon.xdc", 699, 181); // cl (w, cp)
+selectCodeEditor("addon.xdc", 702, 196); // cl (w, cp)
+selectCodeEditor("addon.xdc", 705, 215); // cl (w, cp)
+selectCodeEditor("addon.xdc", 705, 215); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "co.xdc", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "serial_adde.v", 1); // k (j, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("serial_adde.v", 179, 288); // cl (w, cp)
+selectCodeEditor("serial_adde.v", 197, 222); // cl (w, cp)
+selectCodeEditor("serial_adde.v", 194, 264); // cl (w, cp)
+selectCodeEditor("serial_adde.v", 202, 265); // cl (w, cp)
+selectCodeEditor("serial_adde.v", 72, 348); // cl (w, cp)
+typeControlKey((HResource) null, "serial_adde.v", 'c'); // cl (w, cp)
+selectCodeEditor("serial_adde.v", 98, 284); // cl (w, cp)
+typeControlKey((HResource) null, "serial_adde.v", 'v'); // cl (w, cp)
+selectCodeEditor("serial_adde.v", 94, 305); // cl (w, cp)
+selectCodeEditor("serial_adde.v", 181, 347); // cl (w, cp)
+selectCodeEditor("serial_adde.v", 181, 289); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Mon Mar 13 13:30:26 2023] Launched synth_1... Run output will be captured here: F:/serial_adder/serial_adder.runs/synth_1/runme.log [Mon Mar 13 13:30:26 2023] Launched impl_1... Run output will be captured here: F:/serial_adder/serial_adder.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 106 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1022 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3154 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,477 MB. GUI used memory: 99 MB. Current time: 3/13/23, 1:32:27 PM IST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1754.371 ; gain = 912.660 
+// Tcl Message: set_property PROGRAM.FILE {F:/serial_adder/serial_adder.runs/impl_1/serial_adde.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// [Engine Memory]: 1,481 MB (+684126kb) [00:20:00]
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {F:/serial_adder/serial_adder.runs/impl_1/serial_adde.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 48 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "co.xdc", 2); // k (j, cp)
