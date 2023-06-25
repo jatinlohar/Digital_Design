@@ -1,0 +1,433 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 27 16:09:38 2023
+# Process ID: 26872
+# Current directory: D:/Assignment/Codes/Digital Design/DD_final/DD_final.runs/synth_1
+# Command line: vivado.exe -log digital_safe.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source digital_safe.tcl
+# Log file: D:/Assignment/Codes/Digital Design/DD_final/DD_final.runs/synth_1/digital_safe.vds
+# Journal file: D:/Assignment/Codes/Digital Design/DD_final/DD_final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source digital_safe.tcl -notrace
+Command: synth_design -top digital_safe -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11852 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 431.340 ; gain = 98.758
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'digital_safe' [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:50]
+	Parameter locked bound to: 3'b010 
+	Parameter unlocked bound to: 3'b000 
+	Parameter updating bound to: 3'b001 
+	Parameter perm_locked bound to: 3'b011 
+	Parameter perm_perm_locked bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/clock_divider.v:23]
+	Parameter DIVISOR bound to: 26'b00000010011000100101101000 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'give_bcd' [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'give_bcd' (2#1) [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider2' [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/clock_divider2.v:23]
+	Parameter DIVISOR bound to: 24'b101111101011110000100000 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider2' (3#1) [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/clock_divider2.v:23]
+WARNING: [Synth 8-151] case item 3'b100 is unreachable [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:407]
+WARNING: [Synth 8-6090] variable 'lock_led' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:222]
+WARNING: [Synth 8-6090] variable 'update_led' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:223]
+WARNING: [Synth 8-6090] variable 'unlock_led' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:224]
+WARNING: [Synth 8-6090] variable 'perm_lock_led' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:225]
+WARNING: [Synth 8-6090] variable 'nums_entered' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:226]
+WARNING: [Synth 8-6090] variable 'ent_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:229]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:239]
+WARNING: [Synth 8-6090] variable 'ent_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:249]
+WARNING: [Synth 8-6090] variable 'wrong_count' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:262]
+WARNING: [Synth 8-6090] variable 'ent_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:263]
+WARNING: [Synth 8-6090] variable 'nums_entered' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:264]
+WARNING: [Synth 8-6090] variable 'wrong_count' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:274]
+WARNING: [Synth 8-6090] variable 'ent_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:275]
+WARNING: [Synth 8-6090] variable 'nums_entered' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:276]
+WARNING: [Synth 8-6090] variable 'ent_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:289]
+WARNING: [Synth 8-6090] variable 'ent_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:291]
+WARNING: [Synth 8-6090] variable 'upd_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:306]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:316]
+WARNING: [Synth 8-6090] variable 'upd_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:325]
+WARNING: [Synth 8-6090] variable 'upd_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:332]
+WARNING: [Synth 8-6090] variable 'upd_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:345]
+WARNING: [Synth 8-6090] variable 'nums_entered' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:346]
+WARNING: [Synth 8-6090] variable 'upd_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:358]
+WARNING: [Synth 8-6090] variable 'upd_counter' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:360]
+WARNING: [Synth 8-6090] variable 'perm_lock_timer' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:378]
+WARNING: [Synth 8-6090] variable 'wrong_count' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:390]
+INFO: [Synth 8-6155] done synthesizing module 'digital_safe' (4#1) [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:50]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 487.203 ; gain = 154.621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 487.203 ; gain = 154.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 487.203 ; gain = 154.621
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Xilinx/Vivado/2018.3/data/boards/board_files/PYNQ-Z2 v1.0.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/2018.3/data/boards/board_files/PYNQ-Z2 v1.0.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2018.3/data/boards/board_files/PYNQ-Z2 v1.0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/digital_safe_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/digital_safe_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Xilinx/Vivado/2018.3/data/boards/board_files/RPI_Addon.xdc]
+Finished Parsing XDC File [D:/Xilinx/Vivado/2018.3/data/boards/board_files/RPI_Addon.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2018.3/data/boards/board_files/RPI_Addon.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/digital_safe_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/digital_safe_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 848.824 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 848.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 848.824 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 848.824 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 848.824 ; gain = 516.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 848.824 ; gain = 516.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 848.824 ; gain = 516.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'coun_reg' in module 'digital_safe'
+INFO: [Synth 8-5544] ROM "ps" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "unlock_led0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seven_segment" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gpio" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "coun" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ps" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "unlock_led0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seven_segment" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gpio" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "coun" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'seven_segment_reg' [D:/Assignment/Codes/Digital Design/DD_final/DD_final.srcs/sources_1/new/digital_safe.v:31]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                              000
+                 iSTATE0 |                               01 |                              001
+                 iSTATE1 |                               10 |                              010
+                 iSTATE2 |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'coun_reg' using encoding 'sequential' in module 'digital_safe'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 848.824 ; gain = 516.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 34    
+	   5 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 13    
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 15    
+	   4 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 25    
+	   2 Input      1 Bit        Muxes := 49    
+	   5 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module digital_safe 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 34    
+	   5 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 13    
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 15    
+	   4 Input      2 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 25    
+	   2 Input      1 Bit        Muxes := 49    
+	   5 Input      1 Bit        Muxes := 9     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_divider2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER1/seven_segment_reg[6]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER1/seven_segment_reg[5]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER1/seven_segment_reg[4]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER1/seven_segment_reg[3]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER1/seven_segment_reg[2]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER1/seven_segment_reg[1]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER1/seven_segment_reg[0]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER2/seven_segment_reg[6]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER2/seven_segment_reg[5]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER2/seven_segment_reg[4]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER2/seven_segment_reg[3]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER2/seven_segment_reg[2]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER2/seven_segment_reg[1]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER2/seven_segment_reg[0]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER3/seven_segment_reg[6]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER3/seven_segment_reg[5]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER3/seven_segment_reg[4]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER3/seven_segment_reg[3]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER3/seven_segment_reg[2]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER3/seven_segment_reg[1]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER3/seven_segment_reg[0]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER4/seven_segment_reg[6]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER4/seven_segment_reg[5]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER4/seven_segment_reg[4]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER4/seven_segment_reg[3]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER4/seven_segment_reg[2]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER4/seven_segment_reg[1]) is unused and will be removed from module digital_safe.
+WARNING: [Synth 8-3332] Sequential element (BCD_DECODER4/seven_segment_reg[0]) is unused and will be removed from module digital_safe.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 848.824 ; gain = 516.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 848.824 ; gain = 516.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 848.824 ; gain = 516.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 878.582 ; gain = 546.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 878.582 ; gain = 546.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 878.582 ; gain = 546.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 878.582 ; gain = 546.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 878.582 ; gain = 546.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 878.582 ; gain = 546.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 878.582 ; gain = 546.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    14|
+|3     |LUT1   |     3|
+|4     |LUT2   |    20|
+|5     |LUT3   |    17|
+|6     |LUT4   |    32|
+|7     |LUT5   |    48|
+|8     |LUT6   |   150|
+|9     |FDRE   |   148|
+|10    |FDSE   |     1|
+|11    |IBUF   |    16|
+|12    |OBUF   |    20|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |   471|
+|2     |  cd     |clock_divider  |    46|
+|3     |  cd2    |clock_divider2 |    42|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 878.582 ; gain = 546.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 878.582 ; gain = 184.379
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 878.582 ; gain = 546.000
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 878.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 54 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 878.582 ; gain = 559.008
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 878.582 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Assignment/Codes/Digital Design/DD_final/DD_final.runs/synth_1/digital_safe.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file digital_safe_utilization_synth.rpt -pb digital_safe_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 27 16:10:04 2023...
